@@ -14,6 +14,7 @@ namespace OOP___Generic_Collections
         public string Gender { get; set; }
         public float Salary { get; set; }
 
+        //constructor with 4 parameters
         public Employee(int iD, string name, string gender, float salary)
         {
             ID = iD;
@@ -21,10 +22,12 @@ namespace OOP___Generic_Collections
             Gender = gender;
             Salary = salary; ;
         }
+        // method that prints the objects info
         public void PrintInfo()
         {
             Console.WriteLine($"\nId: {ID}\nName: {Name}\nGender: {Gender}\nSalary: {Salary}");
         }
+        //method that counts and outputs how many items is left in the stack myStack
         public void CountStack(Stack <Employee> myStack)
         {
             Console.WriteLine("Items left in stack: " + myStack.Count);

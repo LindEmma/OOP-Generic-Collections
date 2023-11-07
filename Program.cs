@@ -1,4 +1,5 @@
-﻿namespace OOP___Generic_Collections
+﻿// Emma Lind, Edugrade .NET23
+namespace OOP___Generic_Collections
 {
     internal class Program
     {
@@ -26,7 +27,7 @@
             Console.WriteLine("All objects in stack:");
 
             // foreach loop that outputs the info of every object in the stack
-            // and count how many that is left
+            // with method that count how many items is left
             foreach (var emp in myStack)
             {
                 emp.PrintInfo();
@@ -39,7 +40,7 @@
             int numberOfItems = myStack.Count();
 
             // loops through every item in myStack, pop them and prints info. 
-            // can not be done with a foreach loop because myStack shrinks in size
+            // can not be done with a foreach loop ? because myStack shrinks in size
             // each time it loops. 
             for (int i = 0; i < numberOfItems; i++)
             {
@@ -69,6 +70,7 @@
 
             Console.WriteLine("****LIST****\n");
 
+            // new list myList and added objects
             List<Employee> myList = new List<Employee>();
 
             myList.Add(e1);
@@ -77,7 +79,7 @@
             myList.Add(e4);
             myList.Add(e5);
 
-            //Kollar om listan innehåller objektet E5
+            //checks if myList contains object E5 and outputs a message if it does
             if (myList.Contains(e5))
             {
                 Console.WriteLine("The list contains object E5\n");
